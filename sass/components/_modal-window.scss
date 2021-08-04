@@ -1,0 +1,39 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 528px;
+  min-height: 580px;
+  padding: 40px;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.close-button-img {
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .close-button:focus &,
+  .close-button:hover & {
+    fill: var(--accent-color);
+  }
+}

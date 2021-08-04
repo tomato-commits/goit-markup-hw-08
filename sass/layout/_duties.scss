@@ -1,0 +1,36 @@
+.duties {
+  padding-top: 0;
+}
+
+.duties__list {
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.duties__item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.duties__thumb {
+  position: relative;
+}
+
+.duties__thumb-description {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}

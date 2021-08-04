@@ -1,0 +1,26 @@
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+  color: #000000;
+
+  animation-duration: 2000ms;
+  animation-delay: 2000ms;
+  animation-iteration-count: infinite;
+}
+
+.logo__accent {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo-text {
+  color: #ffffff;
+}
