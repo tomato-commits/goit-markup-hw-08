@@ -6,7 +6,11 @@
 
 .social-media-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 
 .social-media-item:not(:last-child) {
