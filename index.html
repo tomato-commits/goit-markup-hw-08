@@ -63,7 +63,7 @@
           +38 096 111 11 11
         </a>
       </div>
-      <div class="mob-menu" data-menu>
+      <div class="mob-menu is-hidden" data-menu>
         <div class="container">
           <button type="button" class="mob-menu__close" data-menu-close>
             <svg class="mob-menu__icon">
@@ -621,11 +621,13 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy" />
-          <label class="modal-form-checkbox-label" for="accept-policy"
-            >Соглашаюсь с рассылкой и принимаю&NonBreakingSpace;
-            <a href="#" class="modal-form-label-link">Условия договора</a></label
-          >
+          <div class="modal-form-checkbox-container">
+            <input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy" />
+            <label class="modal-form-checkbox-label" for="accept-policy">
+              Соглашаюсь с рассылкой и принимаю&NonBreakingSpace;
+            </label>
+            <a href="#" class="modal-form-label-link">Условия договора</a>
+          </div>
           <button type="submit" class="modal-form-submit">Отправить</button>
         </form>
       </div>
