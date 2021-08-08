@@ -1,11 +1,18 @@
 .projects-btn-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
-.projects-item:not(:last-child) {
-  margin-right: 8px;
+.projects-item {
+  margin-bottom: 10px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .projects-btn {

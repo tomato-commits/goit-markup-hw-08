@@ -194,8 +194,19 @@ img {
 
 .projects-btn-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-btn-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+.projects-item {
+  margin-bottom: 10px;
 }
 
 .projects-item:not(:last-child) {
@@ -642,6 +653,7 @@ img {
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
+  z-index: 1000;
 }
 
 .mob-menu .container {
@@ -1304,10 +1316,15 @@ img {
 }
 
 .examples-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
   margin-left: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+  }
 }
 
 .examples-item {
@@ -1320,6 +1337,24 @@ img {
 
 .examples-item:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.examples-image {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .examples-image {
+    width: 354px;
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .examples-image {
+    width: 370px;
+  }
 }
 
 .examples-text-content {
@@ -1346,7 +1381,7 @@ img {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding: 63px 24px;
+  padding: 77px 24px;
   height: 100%;
   width: 100%;
   overflow: auto;
@@ -1357,5 +1392,17 @@ img {
 .examples-link:hover .overlay,
 .examples-link:focus .overlay {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    padding: 63px 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

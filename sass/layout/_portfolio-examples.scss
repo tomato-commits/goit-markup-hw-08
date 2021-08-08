@@ -15,10 +15,12 @@
 }
 
 .examples-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
   margin-left: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+  }
 }
 
 .examples-item {
@@ -30,6 +32,20 @@
 
   &:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.examples-image {
+  width: 100%;
+  height: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 294px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
   }
 }
 
@@ -57,7 +73,7 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding: 63px 24px;
+  padding: 77px 24px;
   height: 100%;
   width: 100%;
   overflow: auto;
@@ -67,5 +83,13 @@
   .examples-link:hover &,
   .examples-link:focus & {
     transform: translateY(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
   }
 }
