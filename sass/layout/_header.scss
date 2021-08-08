@@ -2,6 +2,16 @@
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .header-container {
@@ -17,10 +27,66 @@
   justify-content: space-between;
 }
 
-.menu {
+.header__contact-container {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.header__contact-link {
   display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--description-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:first-child {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.header__email {
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
+}
+
+.header__email-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header__smartphone-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.menu {
   display: none;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .menu__item {
@@ -57,6 +123,8 @@
   }
 }
 
+// MOBILE MENU SECTION
+
 .mobile-nav {
   @media screen and (min-width: 768px) {
     display: none;
@@ -77,37 +145,6 @@
 .mobile-nav__hamburger {
   width: 40px;
   height: 40px;
-}
-
-.header__contact-link {
-  display: flex;
-  display: none;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--description-text-color);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-
-.email {
-  margin-left: auto;
-  margin-right: 50px;
-}
-
-.header__email-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.header__smartphone-icon {
-  margin-right: 10px;
-  fill: currentColor;
 }
 
 .mob-menu {
