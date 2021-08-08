@@ -1032,7 +1032,12 @@ img {
 .our-clients-item {
   margin-bottom: 30px;
   margin-left: 30px;
-  flex-basis: calc((100% - 60px) / 2);
+}
+
+@media screen and (min-width: 480px) {
+  .our-clients-item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
 }
 
 @media screen and (min-width: 768px) {
