@@ -195,13 +195,20 @@ img {
 .projects-btn-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .projects-btn-list {
     flex-wrap: nowrap;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-btn-list {
+    margin-bottom: 50px;
   }
 }
 
@@ -787,7 +794,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..images/tablet/bg-main.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/bg-main.jpg);
   }
 }
 
@@ -908,7 +915,7 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .advantages__list-item-title {
     text-align: left;
   }
